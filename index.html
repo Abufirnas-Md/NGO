@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodBridge – Share Surplus Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>FoodBridge</h1>
+    <p>Connecting Hostel Food to NGOs & People in Need</p>
+</header>
+
+<section class="upload-box">
+    <h2>Upload Leftover Food</h2>
+    
+    <input id="hostel" placeholder="Hostel / Mess Name">
+    <input id="foodType" placeholder="Food Type">
+    <input id="quantity" placeholder="Quantity (meals)">
+    <input id="location" placeholder="Location">
+    <input id="pickupTime" placeholder="Pickup Time">
+    <input id="image" placeholder="Image URL">
+
+    <button onclick="uploadFood()">Upload Food</button>
+</section>
+
+<section class="donation-box">
+    <h2>Donate to NGOs</h2>
+    <input id="amount" placeholder="Enter Amount (₹)">
+    <button onclick="donateNow()">Donate</button>
+</section>
+
+<script src="script.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</html>
