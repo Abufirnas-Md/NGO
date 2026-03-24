@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NGO Dashboard</title>
+</head>
+
+<body>
+<h1>Available Food</h1>
+
+<% posts.forEach(post => { %>
+    <div style="border:1px solid #ccc; padding:10px; margin:10px;">
+        <h3><%= post.hostel %></h3>
+        <p>Food: <%= post.foodType %></p>
+        <p>Quantity: <%= post.quantity %> meals</p>
+        <p>Pickup Time: <%= post.pickupTime %></p>
+        <p>Location: <%= post.location %></p>
+        <img src="<%= post.image %>" width="200">
+    </div>
+<% }) %>
+</body>
+</html>
